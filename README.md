@@ -20,3 +20,5 @@ this, it´s a great excercise to truely understand the logic behind each user ac
 - offer a 'meal deal' discount
 - allow users to rate their experience
 
+
+https://user-images.githubusercontent.com/56134527/216814717-c73979d1-08f9-4570-ac1a-26cc4e7a9298.mp4
