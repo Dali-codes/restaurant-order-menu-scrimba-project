@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy´s menu</title>
+    <link rel="stylesheet" href="style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero-section container">
+            <h1 class="main-title">Jimmy´s Diner</h1>
+            <p class="main-slogan">The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+    <main>
+        <section class="container" id="menu-container"> 
+            <!--menu rendered via script.js--> 
+        </section>
+        <!--checkout section-->
+        <section class="checkout-container container">
+            <div class="checkout-container-inner" id="checkout-container-inner">  
+                <h2 class="checkout-title">Your order</h2>
+                <div class="added-items-list" id="added-items-list">    
+                    <!--added items rendered via script.js-->
+                </div>
+                <div class="total-price-sum">
+                    <p class="total-price-text">Total price:</p>
+                    <p id="total-price-el" class="total-price-el"></p>
+                </div>
+                <button class="green-btn" id="complete-order-btn">Complete order</button>
+            </div>
+        </section>
+        <!--checkout payment modal-->
+        <div class="card-details-modal" id="card-details-modal">
+            <form id="card-details-form" class="card-details-form">
+                <p class="form-title">Enter card details</p>
+                <input 
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your name"
+                aria-label="Full name"
+                aria-required="true"
+                required
+                >
+                <input 
+                type="number"
+                id="cardNumber"
+                name="cardNumber"
+                placeholder="Enter card number"
+                aria-label="Card number"
+                aria-required="true"
+                required
+                >
+                <input 
+                type="number" 
+                id="cvv"
+                name="cvv" 
+                placeholder="Enter CVV"
+                aria-label="CVV"
+                aria-required="true"
+                required
+                >
+                <button type="submit" class="green-btn pay-btn" data-pay-btn="pay-btn">Pay</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

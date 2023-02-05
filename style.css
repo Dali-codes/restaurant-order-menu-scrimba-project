@@ -1,0 +1,256 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smythe', cursive;
+}
+
+/* layout */
+
+section, 
+.container {
+    width: 600px;
+}
+
+/* fonts */
+
+.green-btn,
+.card-details-form,
+.form-title,
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+/* buttons */
+
+button {
+    cursor: pointer;
+}
+
+.green-btn {
+    background: #16DB99;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: transparent;
+    border-radius: 3px;
+    margin: 30px 0 50px 0;
+    padding: 18px 0;
+    width: 100%;
+    height: 71.3px;
+}
+
+.remove-item-btn,
+.add-item-btn {
+    background: transparent;
+}
+
+.add-item-btn {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50%;
+}
+
+.remove-item-btn {
+    border: none;
+    color: #BBBBBB;
+    font-size: 0.75em;
+    padding-left: 10px;
+}
+
+.pay-btn {
+    font-size: 1.25em;
+}
+
+/* hero-section */
+
+.hero-section {
+    height: 167px;
+    background: url(images/header-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.main-title {
+    padding-top: 46px;
+    padding-bottom: 8px;
+    font-size: 2.438em;
+}
+
+.main-title, 
+.main-slogan {
+    padding-left: 46px;
+    margin: 0;
+}
+
+.main-slogan {
+    font-size: 1.401em;
+}
+
+/* menu section */
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu-icon {
+    font-size: 4.875em;
+    margin: 0;
+    width: 170px;
+    text-align: left;
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.menu-item-name {
+    margin: 0;
+    font-size: 1.75em;
+}
+
+.menu-item-descr {
+    margin: 5px 0;
+    color: #8B8B8B;
+}
+
+.menu-item-price {
+    margin: 15px 0 0 0;
+    font-size: 1.25em;
+}
+
+/* added items to order list */
+
+.added-item-title {
+    margin: 0;
+    font-size: 1.75em;
+}
+
+.added-items-list {
+    padding-bottom: 25px;
+}
+
+.added-items-list,
+.total-price-sum {
+    width: 100%;
+}
+
+.added-item,
+.added-item-line,
+.total-price-sum {
+    display: flex;
+}
+
+.added-item {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price-text {
+    font-size: 1em;
+    margin-top: 7px;
+}
+
+.total-price-sum {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #393333;
+    font-size: 1.75em;
+}
+
+.total-price-el {
+    font-size: 0.714em;
+    margin-top: 0;
+}
+
+/* checkout section */
+
+.checkout-container-inner {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 45px 45px 45px;
+}
+
+.checkout-title {
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 1.75em;
+}
+
+/* checkout payment modal */
+
+.card-details-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 3.88991px;
+    width: 524px;
+    height: 542.24px;    
+}
+
+.card-details-form {
+    padding: 23px;
+}
+
+.form-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 31px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: auto;
+    border: 1.29664px solid #757575;
+    border-radius: 3.88991px;
+    font-size: 1.25em;
+    color: #757575;
+    line-height: 31px;
+    padding: 20px;
+    margin-bottom: 23px;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order-complete-message {
+    padding: 50px 60px;
+    background: #ECFDF5;
+    border-radius: 3px;
+    font-size: 1.688em;
+    color: #065F46;
+    margin-top: 0;
+}
